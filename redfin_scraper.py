@@ -277,16 +277,3 @@ rslt_df
 final = rslt_df.sort_values(by=['PRICE','YEAR BUILT'], ascending=True)
 # write into result csv
 final.to_csv(today_path + "/home_suggestion.csv", index=False)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
