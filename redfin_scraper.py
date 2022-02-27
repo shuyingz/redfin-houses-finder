@@ -44,8 +44,8 @@ elementary_schools = {
 }
 
 middle_schools = {
-    "Cooper Middle School": 142292, # 好
-#     "Frost Middle School": 122278, # 好
+    "Cooper Middle School": 142292,
+#     "Frost Middle School": 122278,
     "Longfellow Middle School": 55897,
     "Carson Middle School": 90165,
     "Eagle Ridge Middle School": 116345,
@@ -60,13 +60,6 @@ high_schools = {
     "Briar Woods High School": 122224,
     "Chantilly High School": 139177
 }
-
-
-# In[ ]:
-
-
-
-
 
 # In[4]:
 
@@ -216,12 +209,6 @@ h_df = h_df.set_index('MLS#')
 # h_df
 
 
-# In[ ]:
-
-
-
-
-
 # In[10]:
 
 
@@ -231,13 +218,6 @@ merged_df = e_df.merge(m_df, how='outer').merge(h_df, how='outer')
 # clean up dataframes
 result = merged_df.drop(columns=['SOLD DATE', 'STATE OR PROVINCE', 'LOCATION', 'NEXT OPEN HOUSE START TIME', 'NEXT OPEN HOUSE END TIME', 'SOURCE', 'FAVORITE', 'INTERESTED', 'LATITUDE', 'LONGITUDE'])
 result
-
-
-# In[ ]:
-
-
-
-
 
 # In[11]:
 
